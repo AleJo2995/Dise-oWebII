@@ -25,7 +25,7 @@ class NavBar extends Component {
                     <div className="m-header">
                         <a className={toggleClass.join(' ')} id="mobile-collapse1" href={DEMO.BLANK_LINK} onClick={this.props.onToggleNavigation}><span/></a>
                         <a href={DEMO.BLANK_LINK} className="b-brand">
-                            <span className="b-title">Divudicci</span>
+                            <span className="b-title">CRUD Busetas</span>
                         </a>
                     </div>
                     <a className="mobile-menu" id="mobile-header" href={DEMO.BLANK_LINK}><i className="feather icon-more-horizontal"/></a>

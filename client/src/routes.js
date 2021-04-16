@@ -8,7 +8,15 @@ global.jQuery = $;
 const DashboardDefault = React.lazy(() => import('./Demo/Dashboard/Default'));
 
 const UIBasicButton = React.lazy(() => import('./Demo/UIElements/Basic/Button'));
-const Users = React.lazy(() => import('./Demo/Users/Users'));
+const Clientes = React.lazy(() => import('./Demo/Clientes/Clientes'));
+const Busetas = React.lazy(() => import('./Demo/Busetas/Busetas'));
+const CreateBusetas = React.lazy(() => import('./Demo/Busetas/CreateBuseta'));
+const Reservar = React.lazy(() => import('./Demo/Reservas/Reservar'));
+const CreateClientes = React.lazy(() => import('./Demo/Clientes/CreateCliente'));
+const EditClientes = React.lazy(() => import('./Demo/Clientes/EditCliente'));
+const DeleteClientes = React.lazy(() => import('./Demo/Clientes/DeleteCliente'));
+const EditBusetas = React.lazy(() => import('./Demo/Busetas/EditBuseta'));
+const DeleteBusetas = React.lazy(() => import('./Demo/Busetas/DeleteBuseta'));
 const UIBasicBadges = React.lazy(() => import('./Demo/UIElements/Basic/Badges'));
 const UIBasicBreadcrumbPagination = React.lazy(() => import('./Demo/UIElements/Basic/BreadcrumbPagination'));
 
@@ -41,7 +49,15 @@ const routes = [
     { path: '/maps/google-map', exact: true, name: 'Google Map', component: GoogleMap },
     { path: '/sample-page', exact: true, name: 'Sample Page', component: OtherSamplePage },
     { path: '/docs', exact: true, name: 'Documentation', component: OtherDocs },
-    { path: '/users', exact: true, name: 'Users', component: Users },
+    { path: '/clientes', exact: true, name: 'Users', component: Clientes },
+    { path: '/busetas', exact: true, name: 'Busetas', component: Busetas },
+    { path: '/create/busetas', exact: true, name: 'Busetas', component: CreateBusetas },
+    { path: '/edit/busetas', exact: true, name: 'Busetas', component: EditBusetas },
+    { path: '/delete/busetas', exact: true, name: 'Busetas', component: DeleteBusetas },
+    { path: '/clientes/create', exact: true, name: 'Users', component: CreateClientes },
+    { path: '/clientes/edit', exact: true, name: 'Users', component: EditClientes },
+    { path: '/clientes/delete', exact: true, name: 'Users', component: DeleteClientes },
+    { path: '/reservar', exact: true, name: 'Users', component: Reservar },
 ];
 
 export default routes;
